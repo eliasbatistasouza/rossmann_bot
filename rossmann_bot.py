@@ -3,11 +3,14 @@ import os
 
 import pandas as pd
 import requests
+from dotenv import load_dotenv
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 
+load_dotenv()
+
 # Bot token
-TOKEN = "6987629551:AAGrX5xJynwfGr30SVROrTA2vZ_Z1-1LPwo"
+TOKEN = os.getenv("BOT_TOKEN")
 
 # setWebhook
 # https://api.telegram.org/bot6987629551:AAGrX5xJynwfGr30SVROrTA2vZ_Z1-1LPwo/setWebhook?url=https://8fb1e61659b96c.lhr.life
