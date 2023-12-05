@@ -10,7 +10,7 @@ from fastapi.responses import JSONResponse
 load_dotenv()
 
 # Bot token
-TOKEN = os.environ.get("BOT_TOKEN")
+TOKEN = os.environ["BOT_TOKEN"]
 
 # setWebhook
 # https://api.telegram.org/bot6987629551:AAGrX5xJynwfGr30SVROrTA2vZ_Z1-1LPwo/setWebhook?url=https://8fb1e61659b96c.lhr.life
